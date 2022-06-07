@@ -57,7 +57,7 @@ class FlutterCrispChatPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
       Log.d(tag,"registerWith")
 
       val channel = MethodChannel(registrar.messenger(), "com.bottlepay.flutter_crispchat")
-      channel.setMethodCallHandler(FlutterCrispChatPlugin(channel, registrar.activity().application, registrar.messenger()))
+      channel.setMethodCallHandler(FlutterCrispChatPlugin(channel, registrar.activity()!!.application, registrar.messenger()))
     }
   }
 
