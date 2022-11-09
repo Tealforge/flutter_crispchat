@@ -30,7 +30,7 @@ class _MyAppState extends State<MyApp> {
         body: Center(
           child: Column(
             children: [
-              RaisedButton(
+              ElevatedButton(
                 child: Text('Configure'),
                 onPressed: () async {
                   await FlutterCrispChat().configure(
@@ -38,13 +38,13 @@ class _MyAppState extends State<MyApp> {
                   );
                 },
               ),
-              RaisedButton(
+              ElevatedButton(
                 child: Text('Show chat'),
                 onPressed: () async {
                   await FlutterCrispChat().showChat();
                 },
               ),
-              RaisedButton(
+              ElevatedButton(
                 child: Text('Set user details'),
                 onPressed: () async {
                   await FlutterCrispChat().setUserDetails(
@@ -56,7 +56,7 @@ class _MyAppState extends State<MyApp> {
                   );
                 },
               ),
-              RaisedButton(
+              ElevatedButton(
                 child: Text('Set custom fields'),
                 onPressed: () async {
                   await FlutterCrispChat().setCustomFields({
@@ -65,7 +65,7 @@ class _MyAppState extends State<MyApp> {
                   });
                 },
               ),
-              RaisedButton(
+              ElevatedButton(
                 child: Text('Logout'),
                 onPressed: () async {
                   await FlutterCrispChat().logout();
